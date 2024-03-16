@@ -4,7 +4,7 @@ const server = express();
 
 server.use(express.json());
 
-const port = process.env.PORT || 5000;
+const port = 5000;
 
 server.post("/calculator", (req, res) => {
   try {
