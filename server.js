@@ -10,15 +10,15 @@ server.post("/calculator", (req, res) => {
   try {
     const data = req.body;
 
-    if (data.operation === "addition") {
+    if (data.operation === "+") {
       return res.json({
         result: data.x + data.y,
       });
-    } else if (data.operation === "subtraction") {
+    } else if (data.operation === "-") {
       return res.json({
         result: data.x - data.y,
       });
-    } else if (data.operation === "multiplication") {
+    } else if (data.operation === "x") {
       return res.json({
         result: data.x * data.y,
       });
